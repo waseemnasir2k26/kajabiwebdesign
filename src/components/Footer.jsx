@@ -39,7 +39,9 @@ function Footer() {
 
         <div className="footer__bottom">
           <span>&copy; 2026 The Soul Voyage. All rights reserved.</span>
-          <span className="footer__credit">Designed with sacred intention</span>
+          <span className="footer__credit">
+            Designed by <a href="https://www.waseemnasir.com" target="_blank" rel="noopener noreferrer">Waseem Nasir</a> | <a href="https://www.skynetjoe.com" target="_blank" rel="noopener noreferrer">Skynet Labs</a>
+          </span>
         </div>
       </div>
     </footer>
