@@ -1,0 +1,113 @@
+.testimonials {
+  padding: var(--section-padding);
+  background: var(--charcoal);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials__accent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(201, 169, 110, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.testimonials__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.testimonials__title {
+  font-size: clamp(36px, 4vw, 52px);
+}
+
+.testimonials__content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.testimonials__quote-mark {
+  font-family: var(--font-heading);
+  font-size: 120px;
+  color: var(--gold);
+  opacity: 0.12;
+  line-height: 0.5;
+  margin-bottom: 20px;
+}
+
+.testimonials__quote {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 3vw, 26px);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--cream);
+  line-height: 1.7;
+  margin: 0 0 48px;
+  min-height: 160px;
+  transition: opacity 0.4s ease;
+}
+
+.testimonials__author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.testimonials__name {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.testimonials__role {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.testimonials__location {
+  font-size: 13px;
+  color: var(--text-body);
+}
+
+.testimonials__nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.testimonials__dot {
+  width: 32px;
+  height: 2px;
+  background: rgba(201, 169, 110, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+
+.testimonials__dot.active {
+  background: var(--gold);
+  width: 48px;
+}
+
+.testimonials__dot:hover {
+  background: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .testimonials__quote {
+    min-height: 200px;
+  }
+}

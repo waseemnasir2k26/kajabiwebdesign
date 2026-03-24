@@ -1,0 +1,117 @@
+.offerings {
+  padding: var(--section-padding);
+  background: var(--charcoal);
+  position: relative;
+}
+
+.offerings__header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.offerings__title {
+  font-size: clamp(36px, 4vw, 56px);
+}
+
+.offerings__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: rgba(201, 169, 110, 0.08);
+}
+
+.offering-card {
+  background: var(--charcoal);
+  padding: 60px 48px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.offering-card:hover {
+  background: var(--charcoal-light);
+}
+
+.offering-card__number {
+  font-family: var(--font-heading);
+  font-size: 64px;
+  font-weight: 300;
+  color: var(--gold);
+  opacity: 0.15;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  line-height: 1;
+}
+
+.offering-card__subtitle {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.offering-card__title {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.offering-card__desc {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-body);
+  margin-bottom: 28px;
+}
+
+.offering-card__features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.offering-card__feature {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding: 8px 16px;
+  border: 1px solid rgba(201, 169, 110, 0.2);
+}
+
+.offering-card__line {
+  position: absolute;
+  bottom: 0;
+  left: 48px;
+  right: 48px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.offering-card:hover .offering-card__line {
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .offerings__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offering-card {
+    padding: 40px 32px;
+  }
+
+  .offering-card__number {
+    font-size: 48px;
+    right: 24px;
+    top: 20px;
+  }
+}
