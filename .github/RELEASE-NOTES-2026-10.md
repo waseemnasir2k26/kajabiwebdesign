@@ -1,0 +1,4 @@
+- Public single-page React 19 + Vite marketing site for "The Soul Voyage" (breathwork and sacred-geometry healing brand), built as a Kajabi-style web-design sample; plain CSS with one component and stylesheet per section.
+- October 2026 review: tree and history re-read; last functional commit is 2026-03-24. All 7 external README links (all from the stock Vite template text) returned HTTP 200. Package version bumped 0.1.0 to 0.2.0 as release metadata only; no component code changed.
+- A Work with SkynetLabs section was appended to the README.
+- Known gaps: the README is still the stock "React + Vite" template and says nothing about The Soul Voyage or deployment; no LICENSE, tests, CI or deploy config; testimonials and event content are sample copy and were not verified as real.
